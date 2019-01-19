@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>JR</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metasoutline icons
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/custom.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <!-- Scripts
+  --------------------------------------------------- -->
+  <script src="js/Chart.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="js/site.js"></script>
+	
+
+	
+ 
+</head>
+<body>
+
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+
+
+
+    <div class="row" style="margin-top: 25%">
+      <div class="one-half column">
+        <h4>data visualization</h4> 
+		<p>Type some stuff. Edit later. Link to github, reddit, whatever. Vis, automation, projects, art.</p>   
+      </div>		
+	  <div class="one-half column">
+				<!-- all icons licensed under Creative Commons Attribution 4.0 International: https://fontawesome.com/license -->		
+		<img src="images/envelope-solid.svg" height="35" style="padding: 10px;"/>
+		<img src="images/discord-brands.svg" height="35" style="padding: 10px;"/>
+		<img src="images/reddit-brands.svg" height="35" style="padding: 10px;"/>
+		<img src="images/github-brands.svg" height="35" style="padding: 10px;"/>
+		</div>  
+    </div>
+
+    <nav class="navbar">
+        <div class="container">
+          <ul class="navbar-list">
+            <li class="navbar-item"><a class="navbar-link" href="#">Alpha</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="#">Beta</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="#">Roger</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="#">Wilco</a></li>
+          </ul>
+        </div>
+      </nav>
+
+
+	<div class="row">
+		<div class="one.column" style="margin-top: 5%">
+		<h2>VIS.RIHACEKS.COM</h2>
+		<canvas id="myChart"></canvas>
+		</div>
+	</div>
+
+<div class="row">
+  <div class="one.column">
+    <h3>filler</h3>
+    <h3>filler</h3>
+    <h3>filler</h3>
+    <h3>filler</h3>
+    <h3>filler</h3>
+
+
+    <h3>filler</h3>
+    <h3>filler</h3>
+    <h3>filler</h3>
+    
+  </div>
+</div>
+
+  </div>
+  
+  <script>var ctx = document.getElementById('myChart').getContext('2d');
+var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'line',
+
+    // The data for our dataset
+    data: {
+        //labels: ["January", "February", "March", "April", "May", "June", "July"],
+        labels: ["David Bowie / Space Oddity","The Man Who Sold the World","Hunky Dory","The Rise and Fall of Ziggy Stardust and the Spiders from Mars","Alladin Sane","Pin Ups","Diamond Dogs","Young Americans","Station to Station","Low","“Heroes”","Lodger","Scary Monsters (And Super Creeps)","Let’s Dance","Tonight","Never Let Me Down","Tin Machine","Tin Machine II","Black Tie White Noise","Outside","Earthling","Hours","Heathen","Reality","The Next Day","Blackstar"],
+        
+        datasets: [{
+            label: "UK Peak Chart Position",
+            fill: false,            
+
+            //backgroundColor: 'rgb(132, 99, 255)',
+            borderColor: 'rgb(132, 99, 255)',
+            data: [17,24,3,5,1,1,1,2,5,2,3,4,1,1,1,6,3,23,1,8,6,5,5,3,1,1],
+        }]
+    },
+
+    // Configuration options go here
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                		reverse: true,
+                    beginAtZero:true
+                }
+            }],
+            xAxes: [{
+            		ticks: {
+                	reverse: true,
+                  beginAtZero: true,
+                  autoSkip: false
+
+                }
+            }]
+        }
+    }
+});</script>
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
